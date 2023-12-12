@@ -1,0 +1,7 @@
+symbol,time_series,cumulant_1_variance_om_min,cumulant_2_variance_om_min,tfs_param_variance_om_min,drift_coefficient_0_variance_om_min,average_error_variance_om_min,Cumulant 1,Cumulant 2,TFS amplitude,Drift,MAE_p,R2
+^BVSP,absolute log-return,-4,-5,-1,0,-4,$-0.13\pm0.06$,$-0.05\pm0.02$,$0.04\pm0.01$,$-0.05\pm0.00$,$0.09$,$99.0\%$
+^BVSP,log-return,-4,-5,-1,0,-4,$-0.06\pm0.09$,$-0.04\pm0.07$,$0.08\pm0.01$,$-0.08\pm0.00$,$0.24$,$98.4\%$
+^BVSP,log-return volatility,-4,-5,-1,0,-4,$2.12\pm2.39$,$124.88\pm124.54$,$4.87\pm0.34$,$-4.10\pm0.07$,$423.69$,$99.17\%$
+^GSPC,absolute log-return,-4,-5,-1,0,-4,$-0.07\pm0.03$,$-0.02\pm0.00$,$0.02\pm0.00$,$-0.04\pm0.00$,$0.03$,$99.55\%$
+^GSPC,log-return,-4,-5,-1,0,-4,$-0.07\pm0.03$,$-0.03\pm0.01$,$0.04\pm0.01$,$-0.05\pm0.00$,$0.10$,$99.13\%$
+^GSPC,log-return volatility,-4,-5,-1,0,-4,$-11.79\pm5.34$,$-372.35\pm67.58$,$2.92\pm0.82$,$-5.84\pm0.59$,$839.68$,$99.47\%$

@@ -1,0 +1,7 @@
+symbol,time_series,cumulant_1_variance_om_min,cumulant_2_variance_om_min,tfs_param_variance_om_min,drift_coefficient_0_variance_om_min,average_error_variance_om_min,Cumulant 1,Cumulant 2,TFS amplitude,Drift,MAE_p,R2
+CHFUSD=X,absolute log-return,-3,-4,0,0,-3,$0.015\pm0.001$,$0.004\pm0.001$,$0.003\pm0.000$,$-0.015\pm0.001$,$0.002$,$92.95\%$
+CHFUSD=X,log-return,-3,-4,0,0,-3,$0.018\pm0.001$,$0.006\pm0.001$,$0.004\pm0.000$,$-0.020\pm0.001$,$0.002$,$94.49\%$
+CHFUSD=X,log-return volatility,-3,-4,0,0,-3,$4.210\pm0.304$,$399.661\pm49.597$,$0.968\pm0.054$,$-5.419\pm0.223$,$145.178$,$95.46\%$
+GBPUSD=X,absolute log-return,-3,-4,0,0,-3,$0.008\pm0.002$,$0.001\pm0.001$,$0.002\pm0.000$,$-0.009\pm0.002$,$0.001$,$80.23\%$
+GBPUSD=X,log-return,-3,-4,0,0,-3,$0.011\pm0.003$,$0.002\pm0.001$,$0.002\pm0.000$,$-0.014\pm0.002$,$0.003$,$83.62\%$
+GBPUSD=X,log-return volatility,-3,-4,0,0,-3,$6.933\pm1.846$,$937.145\pm477.342$,$1.394\pm0.356$,$-8.483\pm1.294$,$1221.817$,$85.84\%$

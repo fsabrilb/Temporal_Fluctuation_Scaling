@@ -1,0 +1,28 @@
+# R and R Studio
+.Rproj.user
+.Ruserdata
+.Rhistory
+.Renviron
+.RData
+
+# Python
+.ipynb_checkpoints
+*__pycache__/
+
+# knitr and R markdown
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+.httr-oauth
+
+# vscode
+rsconnect/
+
+# local folders
+input_files/data_dictionary/
+input_files/raw_data/
+make_file_deployment.sh
+logs/
+output_files/20230331
+output_files/20230411
