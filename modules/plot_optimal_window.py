@@ -487,7 +487,7 @@ def resume_optimal_window(
     
     # Extract data ----
     df_optimal = df_optimal[df_optimal["symbol"].isin(symbols_order)].replace(np.nan, 10 ** -100)
-    df_optimal.sort_values(["symbol"], ascending = [symbols_order], inplace = True)
+    df_optimal.sort_values(["symbol"], inplace = True)
     
     if df_optimal["drift_degree"].unique()[0] == 0:
         # Mean - Order of magnitude for average error, parameters and error in parameters ----
@@ -525,7 +525,7 @@ def resume_optimal_window(
         
         # Mean - Final resume optimal data ----
         list_mean = ["symbol", "time_series", "cumulant_1_mean_om_min", "tfs_param_mean_om_min", "drift_coefficient_0_mean_om_min", "average_error_mean_om_min"]
-        df_optimal_mean_resume = df_optimal[list_mean].sort_values(["symbol"], ascending = [symbols_order])
+        df_optimal_mean_resume = df_optimal[list_mean].sort_values(["symbol"])
         
         df_optimal_mean_resume["Cumulant 1"] = (
             "$" +
@@ -603,7 +603,7 @@ def resume_optimal_window(
             "drift_coefficient_0_variance_om_min",
             "average_error_variance_om_min"
         ]
-        df_optimal_variance_resume = df_optimal[list_variance].sort_values(["symbol"], ascending = [symbols_order])
+        df_optimal_variance_resume = df_optimal[list_variance].sort_values(["symbol"])
         
         df_optimal_variance_resume["Cumulant 1"] = (
             "$" + 
@@ -637,11 +637,11 @@ def resume_optimal_window(
         df_optimal_variance_resume["R2"] = df_optimal["rsquared_variance"].apply(lambda x: "${}\%$".format(round(x * 100, 2)))
                 
     else:
-        df_optimal_mean_resume = df_optimal[["symbol", "time_series"]].sort_values(["symbol"], ascending = [symbols_order])
-        df_optimal_variance_resume = df_optimal[["symbol", "time_series"]].sort_values(["symbol"], ascending = [symbols_order])
+        df_optimal_mean_resume = df_optimal[["symbol", "time_series"]].sort_values(["symbol"])
+        df_optimal_variance_resume = df_optimal[["symbol", "time_series"]].sort_values(["symbol"])
     
-    df_optimal_mean_resume.sort_values(["symbol"], ascending = [symbols_order], inplace = True)
-    df_optimal_variance_resume.sort_values(["symbol"], ascending = [symbols_order], inplace = True)
+    df_optimal_mean_resume.sort_values(["symbol"], inplace = True)
+    df_optimal_variance_resume.sort_values(["symbol"], inplace = True)
     
     df_optimal_mean_resume.to_csv(
         "{}/mean_summary_{}.csv".format(output_path, re.sub("-", "", input_generation_date)),
